@@ -38,8 +38,9 @@
        />
        <div className="text-start mt-4">
          <h6>Copied Input Data</h6>
-         <p onCopy={handleParCopy} onCut={handleParCut}>
-           {inputData}
+         <p onCopy={handleParCopy}
+          onCut={handleParCut}>
+          {inputData.toLocaleLowerCase()}
          </p>
        </div>
        <textarea
